@@ -29,6 +29,11 @@ void typed_text(char x[100]){
         t++;
     }
 
+    //wait 1 second
+    realtime = realtime + 1000;
+    while(clock()<realtime);
+
+
     //start backspace
     int k = l-1;
     int m = 1;
